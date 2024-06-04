@@ -23,11 +23,11 @@ def carre(val_user):
 
 @app.route('/somme/<int:val_user>/<int:val_user2>')
 def somme(val_user,val_user2):
-    resultat = val_user + val_user2
-    if resultat % 2 == 0:
-    message = "pair"
-    else:
-    message = "impair"
+resultat = val_user + val_user2
+if resultat % 2 == 0:
+message = "pair"
+else:
+message = "impair"
   
     return "<h2>La somme des 2 valeurs est : </h2>" + str(val_user + val_user2)+"<h2>et est</h2>+message"
                                                                                                                
